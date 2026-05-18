@@ -1,0 +1,22 @@
+{
+  "hello": {
+    "urdu_text": "اسلام و علیکم",
+    "english": "AssalamuAlaikum",
+    "class_id": 0
+  },
+  "please": {
+    "urdu_text": "آپ کی بہت مہربانی ہوگی",
+    "english": "It would be very grateful of you.",
+    "class_id": 1
+  },
+  "thanks": {
+    "urdu_text": "آپ کا بہت شکریہ",
+    "english": "Thanks to you.",
+    "class_id": 2
+  },
+  "nice_to_meet_you": {
+    "urdu_text": "آپ سے مل کر خوشی ہوئی",
+    "english": "Nice to meet you",
+    "class_id": 3
+  }
+}

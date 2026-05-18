@@ -1,0 +1,29 @@
+# Virtual environment — never push this (500MB+)
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large dataset files
+psl_dataset/processed_landmarks/
+psl_dataset/raw_videos/
+
+# Keep labels JSON (small and needed)
+!psl_dataset/labels/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+Doccumentation/

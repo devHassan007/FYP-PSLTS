@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "SignLink - PSL to Urdu",
+  "version": "0.1.0",
+  "description": "Real-time Pakistan Sign Language to Urdu translation",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "https://*.zoom.us/*",
+    "ws://localhost:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*",
+        "https://*.zoom.us/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
