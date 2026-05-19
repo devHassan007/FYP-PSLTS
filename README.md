@@ -16,7 +16,7 @@ https://YOUR_USERNAME.github.io/SignLink
 ##  Quick Start
 
 ### 1. Clone repo
-git clone https://github.com/YOUR_USERNAME/SignLink.git
+git clone https://github.com/devHassan007/SignLink.git
 cd SignLink
 
 ### 2. Install dependencies
