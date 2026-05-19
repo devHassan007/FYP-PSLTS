@@ -4,7 +4,7 @@ A Chrome extension that detects Pakistani Sign Language during
 video calls and shows real-time urdu-subtitles with English Speech.
 
 ##  Website
-https://YOUR_USERNAME.github.io/SignLink
+https://devHassan007.github.io/FYP-PSLTS
 
 
 ##  Model Performance
@@ -16,7 +16,7 @@ https://YOUR_USERNAME.github.io/SignLink
 ##  Quick Start
 
 ### 1. Clone repo
-git clone https://github.com/YOUR_USERNAME/SignLink.git
+git clone https://github.com/devHassan007/FYP-PSLTS.git
 cd SignLink
 
 ### 2. Install dependencies
