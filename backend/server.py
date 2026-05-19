@@ -1,5 +1,4 @@
-# SignLink Backend Server - Updated
-
+# SignLink Backend Server 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
@@ -191,6 +190,7 @@ async def startup_event():
 async def root():
     return {"status": "SignLink Backend Running", "device": str(device)}
 
+
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
@@ -286,9 +286,12 @@ async def websocket_endpoint(websocket: WebSocket):
         import traceback
         traceback.print_exc()
 
+# REPLACE the bottom of server.py with this:
 if __name__ == "__main__":
-    print("\n" + "="*70)
-    print("SignLink Backend Server (Improved)")
-    print("="*70)
-    print(f"Running on: http://localhost:8000")
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    import os
+    port = int(os.environ.get("PORT", 8000))
+    print("🚀 Starting SignLink Backend Server")
+    print(f"💻 Device: {device}")
+    print(f"🌐 Server: http://0.0.0.0:{port}")
+    print(f"🔌 WebSocket: ws://0.0.0.0:{port}/ws")
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
